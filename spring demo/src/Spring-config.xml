@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- <bean class="com.jspiders.srping.MyBean" scope="prototype">
+
+ <property name="id" value="123"></property>
+<property name="name" value="Alok"></property> 
+
+ <constructor-arg value="123"></constructor-arg>
+<constructor-arg value="Alok"></constructor-arg>
+
+</bean> -->
+
+<!-- by name  <bean id="e1" class="com.spring.lecture2.Engine1">
+<property name="ename" value="power"></property>
+</bean> -->
+
+<!-- <bean id="eid2" class="com.spring.lecture2.Engine2">
+<property name="ename" value="turbo"></property>
+</bean>
+ -->
+<!--  <bean id="" class="com.spring.lecture2.Car"> -->
+ 
+<!--<property name="cname"  value="maruti800"></property>
+<property name="e"  ref="eid2"></property>-->
+
+<!--  <constructor-arg name="cname" value="maruti800"></constructor-arg>
+<constructor-arg name="e"  ref="eid2"></constructor-arg>
+</bean> 
+ -->
+ 
+<!--  <bean class="com.spring.lecture2.Engine1">
+<property name="ename" value="power"></property>
+</bean>
+ 
+ <bean class="com.spring.lecture2.Car" autowire="byType">
+ <property name="cname"  value="maruti800"></property>
+ </bean>
+ 
+  <bean class="com.spring.lecture2.Car" autowire="constructor">
+ <property name="cname"  value="maruti800"></property>
+ </bean> -->
+ 
+ <context:component-scan base-package="com.spring.lecture2"></context:component-scan>
+</beans>
